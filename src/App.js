@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 import TaskCompletedList from "./components/TaskCompletedList";
+import Footer from "./components/Footer";
 import notodo from "./empty.svg";
 
 const App = () => {
@@ -116,6 +117,7 @@ const App = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

@@ -16,16 +16,17 @@ body {
   font-style: italic;
 }
 :-moz-placeholder {
-  font-style: italic;  
+  font-style: italic;
 }
 ::-moz-placeholder {
-  font-style: italic;  
+  font-style: italic;
 }
-:-ms-input-placeholder {  
-  font-style: italic; 
+:-ms-input-placeholder {
+  font-style: italic;
 }
 
-input[type="button"], input[type="checkbox"] {
+input[type="button"],
+input[type="checkbox"] {
   cursor: pointer;
 }
 
@@ -171,7 +172,6 @@ input[type="button"], input[type="checkbox"] {
 .completed-list li {
   background: #fff;
 }
-
 
 .task {
   flex-direction: row;
