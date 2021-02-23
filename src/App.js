@@ -21,6 +21,10 @@ const App = () => {
     );
   };
 
+  const onDelete = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
+
   useEffect(() => {
     const tasks = JSON.parse(localStorage.getItem("tasks"));
     if (tasks) {
@@ -93,6 +97,7 @@ const App = () => {
             }
             <TaskCompletedList
               onToggle={onToggle}
+              onDelete={onDelete}
               tasks={tasks.filter((task) => task.isComplete)}
             />
           </>

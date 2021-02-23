@@ -1,7 +1,7 @@
-const Task = ({ task, onToggle }) => {
+const Task = ({ task, onToggle, onDelete }) => {
   return (
     <>
-      <li onClick={() => onToggle(task.id)}>
+      <li onDoubleClick={() => onToggle(task.id)}>
         <div className="task">
           <input
             type="checkbox"
@@ -9,7 +9,10 @@ const Task = ({ task, onToggle }) => {
             checked={task.isComplete}
             onChange={() => onToggle(task.id)}
           />
-          <span className="margin-left-10">{task.description}</span>
+          <span className="margin-left-10" style={{flex: 1}}>{task.description}</span>
+          {task.isComplete && (
+            <a onClick={() => onDelete(task.id)} className="padding-right-15 color-red">X</a>
+          )}
         </div>
       </li>
     </>
