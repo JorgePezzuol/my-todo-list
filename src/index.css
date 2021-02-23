@@ -1,13 +1,191 @@
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c6426e, #642b73);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;  
+}
+::-moz-placeholder {
+  font-style: italic;  
+}
+:-ms-input-placeholder {  
+  font-style: italic; 
+}
+
+input[type="button"], input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.input-add-task {
+  border: 1px solid #ddd;
+  transition: all ease-in 0.25s;
+  line-height: 2em;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 15px 0;
+  padding: 5px 10px;
+  font-size: 1em;
+}
+
+.completed-list li {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-bolder {
+  font-weight: bolder;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.todo-wrapper {
+  display: flex;
+  color: #444;
+  width: 400px;
+  min-height: 500px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin: 20px auto 50px;
+  padding: 40px 20px;
+  -webkit-box-shadow: 0 0 15px 0 rgb(0 0 0 / 5%);
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 5%);
+  background-color: #f4f7fc;
+  overflow: hidden;
+}
+
+.padding-5 {
+  padding: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.width-65 {
+  width: 65%;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.btn-add-task {
+  transition: all ease-in 0.25s;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  padding: 0.3em 0.3em;
+  margin-left: 10px;
+  min-width: 15%;
+  color: #fefefe;
+}
+
+.btn-add-task-enabled {
+  background: #6664ff;
+  border-color: #6664ff;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+.btn-add-task-disabled {
+  background: #ddd;
+  border-color: #ddd;
+  pointer-events: none;
+}
+
+.date {
+  font-size: 1.3em;
+  color: #f65c65;
+  font-weight: normal;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.todo-list {
+  padding-inline-start: 0px;
+  flex: 1;
+}
+
+.div-btn-config {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.todo-list li {
+  list-style-type: none;
+  margin: 10px 0;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.pending-list li {
+  background: #e0e8f5;
+}
+
+.completed-list li {
+  background: #fff;
+}
+
+
+.task {
+  flex-direction: row;
+  display: flex;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
 }
