@@ -1,5 +1,5 @@
 # Project Name
-> My ToDo List - https://adoring-ardinghelli-e83f94.netlify.app
+> My ToDo List - https://todolist-jorgepezzuol.netlify.app/
 
 ## General info
 Simple ToDo list to practice React and Hooks
